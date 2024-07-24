@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="RESET - PAGINA WEB OFICIAL">
+	<main
+		class="flex items-center flex-col justify-center gap-6 text-white pt-5 mt-5"
+	>
+		<h1 class="">
+			<span
+				class="inline-flex animate-background-shine bg-[linear-gradient(110deg,#b6b6b6,45%,#ffffff,55%,#b6b6b6)] bg-[length:250%_100%] bg-clip-text text-7xl text-transparent font-black font-sans"
+			>
+				RESET.
+			</span>
+		</h1>
+		<p class="max-w-[500px] text-center m-4">
+			Nos complace presentar nuestro portafolio de diseños de páginas web,
+			una colección cuidadosamente elaborada de nuestros mejores trabajos.
+		</p>
+		<section class="flex items-center flex-col justify-center gap-4">
+			<Card
+				title="Portafolios - Diseñado para toda la comunidad"
+				href="/portafolios/"
+				text="Embellece tu presencia en línea con páginas dedicadas a mostrar tus habilidades."
+			/>
+			<Card
+				title="Blogs - Ofrecer tutoriales, guías y consejos."
+				href="/blogs/"
+				text="herramienta poderosa para el marketing digital, la creación de marcas personales y la divulgación de conocimiento."
+			/>
+			<Card
+				title="E-commerce - Ventas a través de Internet"
+				href="/ecomers/"
+				text="Embellece tu presencia en línea con páginas dedicadas a mostrar tus habilidades."
+			/>
+			<Card
+				title="App - Componentes clave para una experiencia de usuario fluida"
+				href="/app/"
+				text="Estos componentes trabajan juntos para crear aplicaciones eficientes y fáciles de usar."
+			/>
+		</section>
+	</main>
+</Layout>
