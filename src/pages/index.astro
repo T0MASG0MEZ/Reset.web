@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import User from "../../public/user.astro";
+import Mensaje from "../../public/mensaje.astro";
+import Laptop from "../../public/laptop.astro";
+import Apps from "../../public/apps.astro";
 ---
 
 <Layout title="RESET - PAGINA WEB OFICIAL">
@@ -19,26 +23,18 @@ import Card from "../components/Card.astro";
 			una colección cuidadosamente elaborada de nuestros mejores trabajos.
 		</p>
 		<section class="flex items-center flex-col justify-center gap-4">
-			<Card
-				title="Portafolios - Diseñado para toda la comunidad"
-				href="/portafolios/"
-				text="Embellece tu presencia en línea con páginas dedicadas a mostrar tus habilidades."
-			/>
-			<Card
-				title="Blogs - Ofrecer tutoriales, guías y consejos."
-				href="/blogs/"
-				text="herramienta poderosa para el marketing digital, la creación de marcas personales y la divulgación de conocimiento."
-			/>
-			<Card
-				title="E-commerce - Ventas a través de Internet"
-				href="/ecomers/"
-				text="Embellece tu presencia en línea con páginas dedicadas a mostrar tus habilidades."
-			/>
-			<Card
-				title="App - Componentes clave para una experiencia de usuario fluida"
-				href="/app/"
-				text="Estos componentes trabajan juntos para crear aplicaciones eficientes y fáciles de usar."
-			/>
+			<Card title="Portafolios - Diseñado para toda la comunidad" href="/portafolios/" text="Embellece tu presencia en línea con páginas dedicadas a mostrar tus habilidades.">
+				<User class="size-11 md:size-7" />
+			</Card>
+			<Card title="Blogs - Ofrecer tutoriales, guías y consejos." href="/blogs/" text="herramienta poderosa para el marketing digital, la creación de marcas personales y la divulgación de conocimiento.">
+				<Mensaje class="size-11 md:size-7" />
+			</Card>
+			<Card title="E-commerce - Ventas a través de Internet" href="/ecomers/" text="Muestra tu presencia en línea con páginas dedicadas a vender tu producto">
+				<Laptop class="size-11 md:size-7" />
+			</Card>
+			<Card title="App - Componentes clave para una experiencia de usuario fluida" href="/app/" text="Estos componentes trabajan juntos para crear aplicaciones eficientes y fáciles de usar.">
+				<Apps class="size-11 md:size-7" /> 
+			</Card>
 		</section>
 	</main>
 </Layout>
